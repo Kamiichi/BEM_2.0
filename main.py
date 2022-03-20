@@ -10,10 +10,10 @@ import numpy as np
 import sys, os
 
 args = sys.argv
-if len(args) != 4:
+if len(args) != 3:
     print("invalid arguments recieved.")
     print("[" + str(args[0]) + "]")
-    print("usage : python main.py <mode->0:test 1:release> <process_interval(sec)> <api_config_file_path>")
+    print("usage : python main.py <mode->0:test 1:release> <process_interval(sec)>")
 
 #実行モード
 mode = int(args[1])
@@ -22,7 +22,7 @@ mode = int(args[1])
 interval = int(args[2])
 
 #設定ファイルパス
-config_file = args[3]
+config_file = "./config/config.ini"
 #設定ファイル存在確認
 if not os.path.isfile(config_file):
     print("not found conf file -> [" + str(config_file) + "]")
