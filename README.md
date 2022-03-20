@@ -4,27 +4,23 @@ This repository provides us to become a millionaire.
 BEM2.0 2022/03/01
 
 # テストスクリプト
-　①main.py
-  ②messageUtil.py
-  ③bitflyerApiUtil.py
-  ④config.ini
 
-①main.py
+①main.py<br>
 メインスクリプト
 
-②messageUtil.py
+②messageUtil.py<br>
 ライン通知用共通関数
 
-③bitflyerApiUtil
+③bitflyerApiUtil<br>
 ビットフライヤーAPI取得／動作用関数
 
-④config.ini
+④config.ini<br>
 APIキー
 
 # 依存ライブラリ
-　- pybitflyer
-  - request
-  - configparser
+- pybitflyer
+- request
+- configparser
 
 # コマンド
 > python main.py
