@@ -10,6 +10,7 @@ try:
     api = bitflyerApiUtil.getBemApi('config.ini')
 except:
     print("get api error...  please contact for TAKA.")
+    exit(1)
 
 #ライン通知
 #messageUtil.lineNotify("現在価格は{0}円".format(price))
