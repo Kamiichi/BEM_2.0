@@ -6,7 +6,10 @@ import time
 import numpy as np
 
 #api取得
-api = bitflyerApiUtil.getBemApi('config.ini')
+try:
+    api = bitflyerApiUtil.getBemApi('config.ini')
+except:
+    print("get api error...  please contact for TAKA.")
 
 #ライン通知
 #messageUtil.lineNotify("現在価格は{0}円".format(price))
