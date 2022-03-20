@@ -35,9 +35,6 @@ except:
     print("get api error...  please contact for TAKA.")
     exit(1)
 
-#ライン通知
-#messageUtil.lineNotify("現在価格は{0}円".format(price))
-
 #価格保持日数
 days = 30
 
@@ -50,6 +47,9 @@ while True:
     
     #BITCOIN現在価格取得
     price = bitflyerApiUtil.getCurrentPrice(api)
+
+    #ライン通知
+    #messageUtil.lineNotify("現在価格は{0}円".format(price))
 
     #価格保持配列更新
     prices = pyFxUtil.updatePrices(prices, price)
