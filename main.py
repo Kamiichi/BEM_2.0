@@ -11,7 +11,8 @@ args = sys.argv
 if len(args) != 3:
     print("invalid arguments recieved.")
     print("[" + str(args[0]) + "]")
-    print("usage : python main.py <mode->0:test 1:release><process_interval(sec)> ")
+    print("usage : python main.py <mode->0:test 1:release> <process_interval(sec)> ")
+    exit(0)
 
 #実行モード
 mode = int(args[1])
