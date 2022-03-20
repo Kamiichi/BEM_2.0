@@ -3,7 +3,7 @@ This repository provides us to become a millionaire.
 
 BEM2.0 2022/03/01
 
-・テストスクリプト
+# テストスクリプト
 　①main.py
   ②messageUtil.py
   ③bitflyerApiUtil.py
@@ -21,10 +21,15 @@ BEM2.0 2022/03/01
 ④config.ini
 APIキー
 
-・依存ライブラリ
+# 依存ライブラリ
 　- pybitflyer
   - request
   - configparser
 
-・コマンド
-python main.py
+# コマンド
+> python main.py
+
+usage : python main.py {mode- 0:test 1:release} {process_interval(sec)}
+
+### sample
+> pyhon3 main.py 0 1
