@@ -5,22 +5,23 @@ BEM2.0 2022/03/01
 
 # テストスクリプト
 
-①main.py<br>
+- main.py<br>
 メインスクリプト
 
-②messageUtil.py<br>
+- messageUtil.py<br>
 ライン通知用共通関数
 
-③bitflyerApiUtil<br>
+- bitflyerApiUtil<br>
 ビットフライヤーAPI取得／動作用関数
 
-④config.ini<br>
+- config.ini<br>
 APIキー
 
 # 依存ライブラリ
 - pybitflyer
 - request
 - configparser
+- numpy
 
 # コマンド
 > python main.py
